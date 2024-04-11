@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/styles/sidebar.css" />
+  <link rel="stylesheet" href="./assets/styles/main-content.css">
+  <link rel="stylesheet" href="./assets/styles/reset.css" />
+  <link rel="stylesheet" href="./assets/styles/footer.css">
+
+  <title>Spotify</title>
+
+</head>
+
+<body>
+
+  <!-- Barra Lateral  -->
+  <aside class="sidebar">
+    <nav class="sidebar__navigation">
+      <div class="logo">
+        <a href="">
+          <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify" />
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="">
+            <span class="fa fa-home"></span>
+            <span> Início </span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="fa fa-search"></span>
+            <span> Buscar </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="lybrary__container">
+        <div class="cookies">
+          <span class="fa-solid fa-book"></span>
+          <span class="title_content"> Sua Biblioteca </span>
+          <button class="fa-solid fa-plus" id="btnPlus"></button>
+        </div>
+        <section class="lybrary__choice">
+          <button>Playlist</button>
+          <button>Podcast</button>
+          <button>Artistas</button>
+        </section>
+        <button id="create__Playlist">Crie Sua Playlist</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cookies">
+        <span class="fa fa-language"></span>
+        <span class="title_content"> Linguagem</span>
+        <div class="languages">
+          <button class="">
+            <span class="fa fa-globe"></span>
+            <span>Português do Brasil</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- Parte Principal -->
+  <main>
+    <div class="main_container">
+      <nav class="main-container-header">
+        <div class="navigation">
+          <button id="arrow-left" class="fa-solid fa-arrow-left"></button>
+          <button id="arrow-right" class="fa-solid fa-arrow-right"></button>
+        </div>
+
+        <div class="header_search">
+          <input id="search-input" type="text" placeholder="What do you want to hear?" maxlength="200">
+          <button class="fa-brands fa-searchengin"></button>
+        </div>
+
+        <div class="headder_login">
+          <button class="subscribe" id="btn-inscrever">Inscreva-se</button>
+          <button class="subscribe" id="btn-entrar">Entrar</button>
+        </div>
+
+      </nav>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="music_player">
+      <button class="fa-regular fa-heart" id="like-music"></button>
+      <div class="players">
+        <button class="fa-solid fa-rotate"></button>
+        <button class="fa-solid fa-caret-left"></button>
+        <button class="fa-regular fa-circle-play"></button>
+        <button class="fa-solid fa-caret-right"></button>
+        <button class="fa-solid fa-stop"></button>
+        <button class="fa-solid fa-shuffle"></button>
+      </div>
+    </div>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <div id="footer_social_media">
+          <a href="#" class="footer_link" id="instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="footer_link" id="facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="footer_link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#" class="footer_link" id="email">
+            <i class="fa-brands fa-email"></i>
+          </a>
+        </div>
+      </div>
+      <ul class="footer_list">
+        <li>
+          <h3>Blog</h3>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Tech</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">About us</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Bets Music's</a>
+        </li>
+      </ul>
+      <ul class="footer_list">
+        <li>
+          <h3>Products</h3>
+        </li>
+        <li>
+          <a href="#" class="footer_link">App</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Desktop</a>
+        </li>
+        <li>
+          <a href="#" class="footer_link">Cloud</a>
+        </li>
+      </ul>
+      <div id="send_mail">
+        <h3>Subscribe</h3>
+        <p>Enter your email to get notified about our news</p>
+        <div id="input_group">
+          <input id="input_group_input" type="text" placeholder="Write your email here . . ." maxlength="30">
+          <button class="fa-solid fa-envelope"></button>
+        </div>
+        <div class="logo">
+          <a href="">
+            <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

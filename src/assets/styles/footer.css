@@ -1,0 +1,174 @@
+@import url(vars.css);
+
+
+/* FOOTER */
+
+footer{
+  color:var(--color-neutral-40);
+  grid-area: footer;
+  height: 11vh;
+}
+
+.music_player{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.music_player button {
+  background-color: black;
+  border-radius: 500px;
+  border-color: #7f37c9;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 3.5rem;
+  height: 3rem;
+  font-size: 40px;
+  margin: 10px;
+}
+
+#footer_content{
+  background-color: var(--color-neutral-10);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer_contacts{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+#footer_social_media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  margin-left: 90px;
+  margin-top: 15px;
+}
+#footer_social_media h3 {
+  font-family: 'Inter',sans-serif;
+  font-weight: 800;
+}
+#footer_social_media a {
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer_link {
+  text-decoration: none;
+}
+
+#footer_social_media .footer_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  color: var(--color-neutral-40);
+  border-radius: 80px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer_link :hover{
+  opacity: 0.8;
+}
+
+#instagram{
+  background: linear-gradient(#7f37c9,#ff2992,#ff9807);
+}
+
+#facebook{
+  background-color: #4267b3 ;
+}
+
+#whatsapp{
+  background-color: #25d366;
+}
+
+.footer_list h3{
+  font-family: 'Inter' , sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: var(--color-neutral-40);
+  font-size: 18px;
+}
+
+.footer_list li{
+  margin: 7px;
+  margin: 15px 0;
+}
+
+.footer_list li a{
+  color: var(--color-neutral-30);
+}
+
+#input_group{
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: var(--color-neutral-0);
+  border-radius: 15px;
+}
+
+#input_group input:focus-visible {
+  /* como tirar a borda ao clicar no input! */
+  outline:none;
+}
+
+#send_mail h3{
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+#send_mail p{
+  margin-bottom: 10px;
+  color: var(--color-neutral-30);
+  font-size: 13px;
+}
+#input_group input{
+  background-color: var(--color-neutral-0);
+  font-family: sans-serif;
+  border: transparent;
+  padding: 8px 12px;
+  width: 35vh;
+  border-radius: 8px;
+  color: var(--color-neutral-40);
+}
+
+#input_group button{
+  margin: 0 0 0 3px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-30);
+  background-color: transparent;
+  border-radius: 400px 400px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: all 0.3s;
+}
+
+#send_mail .logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#sidebar_start ul li a :hover{
+  text-decoration: underline;
+}

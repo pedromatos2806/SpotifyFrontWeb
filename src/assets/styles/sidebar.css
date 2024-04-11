@@ -1,0 +1,191 @@
+/*  IMPORT'S */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
+@import url(vars.css);
+
+
+h1 {
+  color: white;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 25% 75%; /* Divide a tela em 25% para o aside e 75% para o main */
+  grid-template-rows: 1fr auto; /* Uma linha para o main e outra para o footer */
+  grid-template-areas:
+    "aside main"
+    "footer footer"; /* Áreas nomeadas para cada seção */
+  height: 100vh; /* Altura total da viewport */
+}
+/* SIDE BAR */
+
+.sidebar{
+  grid-area: aside;
+}
+
+
+.sidebar__navigation {
+  background-color:var(--color-neutral-10);
+  border-radius: 8px;
+  padding: 16px 0 0 16px;
+}
+
+.logo{
+  background: transparent;
+  display:flex;
+  border-radius:8px ;
+  padding:16px 0 0 16px;
+}
+
+.logo img {
+  width: 80px; 
+}
+
+.sidebar .sidebar__navigation ul li {
+  padding: 10px 0px;
+}
+
+.sidebar nav ul {
+  margin-top: 20px;
+  padding: 0 20px 10px 20px;  
+}
+
+.container{
+  padding: 10px 10px 0 10px;
+  background-color: var(--color-neutral-10);
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.container .lybrary__container {
+  background-color: var(--color-neutral-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 5px;
+  text-align: center;
+}
+
+.lybrary__container .button  {
+  padding: 5px;
+  margin: 0 2px 0 2px;
+  background-color: var(--color-neutral-10);
+  color: var(--color-neutral-30);
+  border: hidden;
+  font-size: larger;
+}
+
+.lybrary__choice button{
+  margin: 10px 3px;
+  padding: 4px;
+  font-size: medium;
+  border-radius: 8px;
+  border: 1px solid var(--color-neutral-30);
+  font-family:"DM Sans", sans-serif; 
+  font-weight: 530;
+  background-color: transparent;
+  color: var(--color-neutral-40);
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.lybrary__choice button :hover{
+  color: var(--color-neutral-0);
+  opacity: 0.7;
+}
+
+.container span {
+  padding: 5px;
+  color: var(--color-neutral-30);
+  font-weight: 600;
+}
+
+.languages button {
+  margin: 10px 4px;
+  padding: 2px;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 8px;
+  border-color: var(--color-neutral-40);
+  text-align: center;
+  text-decoration: none;
+  text-transform: 0;
+}
+.cookies #btnPlus{
+  background-color: transparent;
+  padding-bottom: 8px;
+  color:var(--color-neutral-30);
+  border: transparent;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#btnPlus{
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#create__Playlist{
+  background-color: var(--color-neutral-0);
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color:var(--color-neutral-30);
+  border-radius: 14px;
+  height: 35px;
+  letter-spacing: 2px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#create__Playlist:hover{
+  text-decoration:underline;
+  background-color: var(--color-neutral-30);
+  color: var(--color-neutral-0);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.sidebar nav ul li a {
+  color: var(--color-neutral-30);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+}
+
+
+.sidebar__navigation ul li a span {
+  font-size: 17px;
+}
+
+.title_content{
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 1.1px;
+}
+.container .cookies .languages{
+  align-items: center;
+  justify-content: center;
+}
+
+.container .cookies .languages button {
+  width: 200px;
+  padding: 5px 0;
+  color:var(--color-neutral-30);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.container .cookies .languages button:hover{
+  background-color:var(--color-neutral-40);
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.7;
+}
